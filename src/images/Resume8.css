@@ -40,7 +40,7 @@ img
 
 p, li
 {
-   color: red;
+   color: black;
    font-size: 18px;
    align-items: center;
 }
@@ -121,7 +121,8 @@ form button {
 }
 
 
-/* Adding Media query rules to help screen adjust to different layouts*/
+/* Adding Media query rulesfor mobile screens to help adjust to different layouts*/
+/*breakpoint 428px Large mobile*/
 
 /*===========Mobile==========*/
     
@@ -148,7 +149,11 @@ header, footer
 .container {
   
   background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  padding: 20px;
+  
+
 }
+
 
 #Education,
 #Experience,
@@ -157,25 +162,65 @@ header, footer
   background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
   color: antiquewhite;
   font-family: sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   border-radius: 40px;
   text-shadow: black 1px -3px 5px;
   text-align: center;
-  width: 85%;
+  width: 75%;
+  padding:10px
+  
 }
 
 h3 {
   background: blanchedalmond;
-  border-radius: 60%;
-  font-size: 20px;
+  font-size: 15px;
+  border-radius: 40px;
+  width: 85%;
   color: black;
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  width: 0%;
+  padding: 0px;
+  
   
  
 }
-
+.header, .footer
+{
+  color: pink;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+   text-shadow: black 0px -1px 2px;
+   font-size: 20px;
+}
 }
 
-/*===========Tablet==========*/
+
+
+/* Adding Media query rules for mobile screens to help adjust to different layouts*/
+/*breakpoint 428px Large mobile*/
+
+
+@media screen and (max-width:375px){
+
+  .container {
+  
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    padding: 20px;
+  }
+
+  .main {
+    border: 100px;
+    padding:60px;
+    width: 85%;
+  }
+   
+  h3 {
+    background: blanchedalmond;
+    font-size: 15px;
+    border-radius: 90px;
+    width: 98%;
+    color: black;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+     }
+}
